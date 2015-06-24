@@ -1,0 +1,29 @@
+{
+  "name": "tsrun",
+  "version": "1.0.0",
+  "description": "Run Typescript files from the command line with no precompilation.",
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brynbellomy/tsrun.git"
+  },
+  "main": "bin/tsrun",
+  "bin": {
+    "tsrun": "bin/tsrun"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bryn austin bellomy <bryn.bellomy@gmail.com>",
+  "license": "ISC",
+  "keywords": [
+    "typescript",
+    "cli",
+    "util",
+    "compile",
+    "compiler"
+  ],
+  "dependencies": {
+    "typescript-require": "^0.2.9"
+  }
+}

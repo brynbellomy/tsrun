@@ -1,0 +1,19 @@
+#!/usr/bin/env node --harmony
+
+var path = require('path')
+require('typescript-require')({
+    nodeLib: false,
+    target: 'ES5',
+    module: 'commonjs',
+    exitOnError: true
+});
+
+if (process.argv.length <= 2) {
+    console.error('Missing required argument (i.e., the script to run)')
+    process.exit(1)
+}
+
+var resolved = path.resolve(process.cwd(), process.argv[2])
+require(resolved)
+
+
